@@ -13,6 +13,7 @@
         <img src="image/wallet5.png" class="img1" />
         <h1 class="h1-1">Welcome Back!</h1>
         <h5 class="h5-1">Masuk untuk melanjutkan kelola keuanganmu</h5>
+        <h5 id="wrong"></h5>
         <form>
           <label class="label">
             Email
@@ -22,6 +23,7 @@
               autofocus
               required
               autocomplete="off"
+              id="email"
               placeholder="Masukan email"
             />
           </label>
@@ -29,27 +31,34 @@
           <label class="label">
             Password
             <img src="image/padlock.png" />
-            <input type="password" required placeholder="Masukan password" />
+            <input
+              type="password"
+              required
+              id="password"
+              placeholder="Masukan password"
+            />
           </label>
 
           <div class="remember">
             <label>
-              <input type="checkbox" />
+              <input type="checkbox" id="check" />
               Ingat saya
             </label>
             <h6 class="h6-1">lupa password?</h6>
           </div>
-          <button type="submit">Log In</button>
+          <button id="log" type="button">Log In</button>
         </form>
 
         <h6 class="h6-2">atau</h6>
 
-        <button class="log-with-google">
+        <button class="log-with-google" id="gg">
           <img src="image/google.png" />
           Masuk dengan Google
         </button>
         <h5 class="h5-2">Belum punya akun?</h5>
       </section>
     </main>
+
+    <script src="login.js"></script>
   </body>
 </html>
