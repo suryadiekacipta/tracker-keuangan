@@ -193,3 +193,49 @@ header img {
   top: 16%;
   margin-right: 5px;
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 84.5%;
+  height: auto;
+}
+
+.parent1 {
+  display: flex;
+  justify-content: space-between;
+  width: 97%;
+  height: fit-content;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.child1 h1 {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.child1 h5 {
+  font-size: 0.8em;
+}
+
+.child2 {
+  position: relative;
+  top: 10%;
+}
+
+.child2 input {
+  position: relative;
+  margin-right: 5px;
+  top: -20%;
+  left: 0;
+}
+
+.child2 img {
+  width: 35px;
+  height: auto;
+  cursor: pointer;
+}
