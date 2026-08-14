@@ -227,15 +227,100 @@ header img {
   top: 10%;
 }
 
-.child2 input {
+.child2 button {
+  background-color: white;
+  border: 1.3px solid #cdcbd1;
+  border-radius: 5px;
   position: relative;
+  padding: 7px;
+  padding-left: 30px;
   margin-right: 5px;
   top: -20%;
   left: 0;
 }
 
-.child2 img {
+.child2 .img2 {
   width: 35px;
   height: auto;
   cursor: pointer;
+}
+
+.img1 {
+  width: 18px;
+  height: auto;
+  margin-right: 5px;
+  position: absolute;
+  z-index: 2;
+  top: 11px;
+  left: 7px;
+}
+
+.parentofcard {
+  display: flex;
+  width: 97%;
+  justify-content: space-between;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  background-color: white;
+  padding: 20px 33px 20px;
+  border-radius: 10px;
+  outline: 1px solid #cdcbd1;
+}
+
+.img-card1 {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  position: relative;
+  top: 4px;
+}
+
+.img-card2 {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  position: relative;
+  top: 4px;
+}
+
+.img-card3 {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  position: relative;
+  top: 4px;
+  transform: rotate(180deg);
+}
+
+.img-card4 {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  position: relative;
+  top: 4px;
+}
+
+#saldo1 {
+  color: blue;
+  font-size: 20px;
+}
+
+#saldo2 {
+  color: green;
+  font-size: 20px;
+}
+
+#saldo3 {
+  color: red;
+  font-size: 20px;
+}
+
+#saldo4 {
+  color: blue;
+  font-size: 20px;
 }

@@ -67,3 +67,26 @@ window.addEventListener("load", () => {
     des.textContent = "Ini ringkasan keuanganmu hari ini.";
   }, 2800);
 });
+
+let bulan_data = [
+  "Januari",
+  "Februari",
+  "Maret",
+  "April",
+  "Mei",
+  "Juni",
+  "Juli",
+  "Agustus",
+  "September",
+  "Oktober",
+  "November",
+  "Desember",
+];
+
+let buttang = document.getElementById("tanggal");
+let date = new Date();
+let day = date.getDate();
+let month = date.getMonth();
+let year = date.getFullYear();
+
+buttang.textContent = `${day} / ${bulan_data[month]} / ${year}`; //date + bulan_data[month] + year;
