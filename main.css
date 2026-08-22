@@ -211,7 +211,7 @@ header img {
   justify-content: space-between;
   width: 97%;
   height: fit-content;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 10px;
 }
 
@@ -341,8 +341,9 @@ header img {
   flex-direction: column;
   margin-top: 10px;
   margin-bottom: 10px;
+  width: 22%;
   background-color: white;
-  padding: 23px;
+  padding: 15px;
   border: 1.3px solid #cdcbd1;
   border-radius: 10px;
 }
@@ -377,7 +378,7 @@ header img {
 .label2 input {
   border: 1px solid #989b9d;
   border-radius: 0px 5px 5px 0px;
-  padding-right: 11%;
+  width: 100%;
 }
 
 .label1 input {
@@ -408,6 +409,12 @@ header img {
 }
 
 .child-form {
+  display: flex;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.child-form2 {
   display: flex;
   margin-top: 5px;
   width: 100%;
@@ -489,4 +496,29 @@ header img {
   left: 13%;
   color: white;
   font-size: 20px;
+}
+
+.parent-child2 {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+
+  width: 40%;
+  padding: 10px;
+  height: 90%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1.3px solid #cdcbd1;
+}
+
+.parent-child3 {
+  width: 30%;
+  height: 92.5%;
+  border: 1.3px solid #cdcbd1;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: white;
 }

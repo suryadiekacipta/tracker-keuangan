@@ -107,55 +107,83 @@
 
         <div class="parent2">
           <div class="parent-child1">
-          <h1 class="h1-parent2"><span class="span1">+</span> Tambah Transaksi</h1>
-          <form class="form1">
-            <label class="label1">
-              Nama/Desripsi
-              <input type="text" placeholder="Contoh: Gaji Bulanan" class="input1"/>
-            </label>
+            <h1 class="h1-parent2">
+              <span class="span1">+</span> Tambah Transaksi
+            </h1>
+            <form class="form1">
+              <label class="label1">
+                Nama/Desripsi
+                <input
+                  type="text"
+                  placeholder="Contoh: Gaji Bulanan"
+                  class="input1"
+                />
+              </label>
 
-            <label class="label2">
-              Nominal
-              <div class="child-form">
-                <span class="span2">Rp</span>
-                <input type="number" placeholder="Masukkan nominal" />
-              </div>
-            </label>
+              <label class="label2">
+                Nominal
+                <div class="child-form">
+                  <span class="span2">Rp</span>
+                  <input type="number" placeholder="Masukkan nominal" />
+                </div>
+              </label>
 
-            <label class="label3">
-              Kategori
-              <select id="opsi1">
-                <option value="Pilih Kategori">Pilih Kategori</option>
-                <option value="Gaji Bulanan">Gaji Bulanan</option>
-                <option value="Makan Siang">Makan Siang</option>
-                <option value="Bensin">Bensin</option>
-                <option value="Top Up Game">Top Up Game</option>
-                <option value="Belanja Bulanan">Belanja Bulanan</option>
-              </select>
-            </label>
+              <label class="label3">
+                Kategori
+                <select id="opsi1">
+                  <option value="Pilih Kategori">Pilih Kategori</option>
+                  <option value="Gaji Bulanan">Gaji Bulanan</option>
+                  <option value="Makan Siang">Makan Siang</option>
+                  <option value="Bensin">Bensin</option>
+                  <option value="Top Up Game">Top Up Game</option>
+                  <option value="Belanja Bulanan">Belanja Bulanan</option>
+                </select>
+              </label>
 
-            <label>
-              Tipe
-              <div class="child-form">
-                <button type="button" id="button1">
-                  <img src="image/greenrow2.svg" />
-                  Pemasukan
-                </button>
+              <label>
+                Tipe
+                <div class="child-form2">
+                  <button type="button" id="button1">
+                    <img src="image/greenrow2.svg" />
+                    Pemasukan
+                  </button>
 
-                <button type="button" id="button2">
-                  <img src="image/redrow2.svg" />
-                  Pengeluaran
-                </button>
-              </div> 
-            </label>
+                  <button type="button" id="button2">
+                    <img src="image/redrow2.svg" />
+                    Pengeluaran
+                  </button>
+                </div>
+              </label>
 
-            <label class="label4">
-              Tanggal
-              <input type="date" id="date">
-            </label>
+              <label class="label4">
+                Tanggal
+                <input type="date" id="date" />
+              </label>
 
-            <button type="button" id="button3">Tambah Transaksi</button>
-          </form>
+              <button type="button" id="button3">Tambah Transaksi</button>
+            </form>
+          </div>
+
+          <div class="parent-child2">
+            <div>
+              <h1>Riwayat Transaksi</h1>
+              <form>
+                <input placeholder="Cari transaksi" type="search" />
+                <select>
+                  <option>Semua</option>
+                  <option>Gaji Bulanan</option>
+                  <option>Makan Siang</option>
+                  <option>Bensin</option>
+                  <option>Top Up Game</option>
+                  <option>Belanja Bulanan</option>
+                </select>
+              </form>
+              <div class="riwayat-transaksi1"></div>
+              <button type="button">Lihat semua transaksi</button>
+            </div>
+          </div>
+
+          <div class="parent-child3"></div>
         </div>
       </section>
     </main>
