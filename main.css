@@ -431,7 +431,7 @@ header img {
 
 #button1 {
   border: 1.5px solid rgba(28, 241, 0, 0.4);
-  padding: 8px 10px 8px;
+  padding: 8px 15px 8px;
   padding-left: 25px;
   border-radius: 10px;
   background-color: rgba(28, 241, 0, 0.2);
@@ -532,6 +532,7 @@ header img {
   border: 1.3px solid #cdcbd1;
   border-radius: 10px;
   background-color: #cee6f6;
+  margin-bottom: 15px;
 }
 
 .child-tips1 {
@@ -550,4 +551,36 @@ header img {
   width: 55px;
   height: 55px;
   margin-right: 10px;
+}
+
+.child3 {
+  display: flex;
+  width: 97%;
+  height: auto;
+  justify-content: space-between;
+  margin-top: 7px;
+}
+
+.child4 {
+  display: flex;
+  align-items: center;
+}
+
+.child4 h1 {
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 7px;
+}
+
+.child4 img {
+  width: 20px;
+  height: 20px;
+  margin-left: 12px;
+}
+
+.tambah-kategori {
+  color: blue;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(131, 131, 212, 0.15);
 }
