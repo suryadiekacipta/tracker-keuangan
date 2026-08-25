@@ -560,6 +560,9 @@ header img {
 }
 
 .button-lihat-transaksi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   background-color: rgba(131, 131, 212, 0.15);
   border: none;
@@ -567,6 +570,12 @@ header img {
   padding: 8px;
   border-radius: 7px;
   font-weight: bold;
+}
+
+.button-lihat-transaksi img {
+  width: 14px;
+  height: 14px;
+  margin-left: 10px;
 }
 
 .child2-div2 img {
@@ -622,6 +631,31 @@ header img {
   height: auto;
   justify-content: space-between;
   margin-top: 7px;
+  margin-bottom: 5px;
+}
+
+.kategori-list {
+  width: 100%;
+  height: 79%;
+}
+
+.set-kat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(131, 131, 212, 0.15);
+  border: none;
+  color: blue;
+  padding: 8px;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.set-kat img {
+  width: 17px;
+  height: 17px;
+  margin-right: 10px;
 }
 
 .child4 {
