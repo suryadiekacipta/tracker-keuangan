@@ -90,3 +90,16 @@ let month = date.getMonth();
 let year = date.getFullYear();
 
 buttang.textContent = `${day} / ${bulan_data[month]} / ${year}`; //date + bulan_data[month] + year;
+
+let pop1 = document.querySelector(".pop1");
+let tambah_kategori = document.querySelector(".tambah-kategori");
+let batal_pop1 = document.querySelector(".batal-1");
+let tambah_pop1 = document.querySelector(".tambah-1");
+
+tambah_kategori.addEventListener("click", () => {
+  pop1.classList.add("pop1_active");
+});
+
+batal_pop1.addEventListener("click", () => {
+  pop1.classList.remove("pop1_active");
+});
