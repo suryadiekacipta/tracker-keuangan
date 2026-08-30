@@ -103,3 +103,68 @@ tambah_kategori.addEventListener("click", () => {
 batal_pop1.addEventListener("click", () => {
   pop1.classList.remove("pop1_active");
 });
+
+// INI KATEGORI//
+
+let parent1 = document.querySelector(".kategori-list");
+let opsi_kat = document.querySelector(".opsi2");
+let opsi_nominal = document.querySelector(".opsi3");
+let but_tambah = document.querySelector(".tambah-1");
+
+let data_logo = [
+  "image/sendok.png",
+  "image/bag.png",
+  "image/koper.png",
+  "image/fuel.png",
+  "image/games.png",
+];
+let data_kategori = [];
+
+but_tambah.addEventListener("click", () => {
+  if (opsi_kat.value == "Makanan & Minuman") {
+    parent1.innerHTML += `
+    <div class="kat-child1">
+      <div class="kat-child2">
+        <img src="${data_logo[0]}" />
+        <h1>${opsi_kat.value}</h1>
+      </div>
+      <h1>Rp ${opsi_nominal.value}</h1>
+    </div>`;
+  } else if (opsi_kat.value == "Pemasukan") {
+    parent1.innerHTML += `
+    <div class="kat-child1">
+      <div class="kat-child2">
+        <img src="${data_logo[2]}" />
+        <h1>${opsi_kat.value}</h1>
+      </div>
+      <h1>Rp ${opsi_nominal.value}</h1>
+    </div>`;
+  } else if (opsi_kat.value == "Bensin") {
+    parent1.innerHTML += `
+    <div class="kat-child1">
+      <div class="kat-child2">
+        <img src="${data_logo[3]}" />
+        <h1>${opsi_kat.value}</h1>
+      </div>
+      <h1>Rp ${opsi_nominal.value}</h1>
+    </div>`;
+  } else if (opsi_kat.value == "Top Up Game") {
+    parent1.innerHTML += `
+    <div class="kat-child1">
+      <div class="kat-child2">
+        <img src="${data_logo[4]}" />
+        <h1>${opsi_kat.value}</h1>
+      </div>
+      <h1>Rp ${opsi_nominal.value}</h1>
+    </div>`;
+  } else if (opsi_kat.value == "Belanja Bulanan") {
+    parent1.innerHTML += `
+    <div class="kat-child1">
+      <div class="kat-child2">
+        <img src="${data_logo[1]}" />
+        <h1>${opsi_kat.value}</h1>
+      </div>
+      <h1>Rp ${opsi_nominal.value}</h1>
+    </div>`;
+  }
+});
