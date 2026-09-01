@@ -118,7 +118,7 @@ let data_logo = [
   "image/fuel.png",
   "image/games.png",
 ];
-let data_kategori = [];
+let data_kategori = JSON.parse(localStorage.getItem("data_kategori")) || [];
 
 but_tambah.addEventListener("click", () => {
   if (opsi_kat.value == "Makanan & Minuman") {

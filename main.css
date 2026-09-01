@@ -815,7 +815,7 @@ header img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   margin-top: 7px;
   width: 95%;
 }
@@ -828,7 +828,7 @@ header img {
 .kat-child1 img {
   width: 30px;
   height: 30px;
-  margin-right: 5px;
+  margin-right: 8px;
 }
 
 .kat-child2 {
