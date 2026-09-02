@@ -168,3 +168,16 @@ but_tambah.addEventListener("click", () => {
     </div>`;
   }
 });
+
+let but1ak = document.getElementById("button1");
+let but2ak = document.getElementById("button2");
+
+but1ak.addEventListener("click", () => {
+  but1ak.classList.add("but1aktive");
+  but2ak.classList.remove("but2aktive");
+});
+
+but2ak.addEventListener("click", () => {
+  but2ak.classList.add("but2aktive");
+  but1ak.classList.remove("but1aktive");
+});
