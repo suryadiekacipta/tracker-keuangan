@@ -72,7 +72,7 @@
             <img src="image/last-wallet.png" class="img-card1" />
             <div>
               <h4>Saldo Total</h4>
-              <h1 id="saldo1">Rp 2.350.000</h1>
+              <h1 id="saldo1">Rp 0</h1>
               <h5>Saldo bersih saat ini</h5>
             </div>
           </div>
@@ -81,7 +81,7 @@
             <img src="image/green-row.png" class="img-card2" />
             <div>
               <h4>Pemasukan</h4>
-              <h1 id="saldo2">Rp 3.000.000</h1>
+              <h1 id="saldo2">Rp 0</h1>
               <h5>Total pemasukan</h5>
             </div>
           </div>
@@ -90,7 +90,7 @@
             <img src="image/red-row.png" class="img-card3" />
             <div>
               <h4>Pengeluaran</h4>
-              <h1 id="saldo3">Rp 650.000</h1>
+              <h1 id="saldo3">Rp 0</h1>
               <h5>Total pengeluaran</h5>
             </div>
           </div>
@@ -99,7 +99,7 @@
             <img src="image/result.png" class="img-card4" />
             <div>
               <h4>Total Transaksi</h4>
-              <h1 id="saldo4">12</h1>
+              <h1 id="saldo4">0</h1>
               <h5>Jumlah transaksi</h5>
             </div>
           </div>
@@ -124,11 +124,27 @@
                 Nominal
                 <div class="child-form">
                   <span class="span2">Rp</span>
-                  <input
-                    type="number"
-                    placeholder="Masukkan nominal"
-                    id="nominal"
-                  />
+                  <select id="nominal">
+                    ```html
+                    <option value="0">Pilih Nominal</option>
+                    <option value="50000">50.000</option>
+                    <option value="100000">100.000</option>
+                    <option value="150000">150.000</option>
+                    <option value="200000">200.000</option>
+                    <option value="250000">250.000</option>
+                    <option value="300000">300.000</option>
+                    <option value="350000">350.000</option>
+                    <option value="400000">400.000</option>
+                    <option value="500000">500.000</option>
+                    <option value="700000">700.000</option>
+                    <option value="800000">800.000</option>
+                    <option value="900000">900.000</option>
+                    <option value="1000000">1.000.000</option>
+                    <option value="1500000">1.500.000</option>
+                    <option value="2000000">2.000.000</option>
+                    <option value="5000000">5.000.000</option>
+                    ```
+                  </select>
                 </div>
               </label>
 

@@ -189,7 +189,17 @@ let butklr = document.getElementById("button2");
 let add1 = document.getElementById("button3");
 let dte = document.getElementById("date");
 let div_isi = document.querySelector(".riwayat-transaksi1");
-let wrna_nom;
+
+let value_saldo_now = 0;
+let value_saldo_min = 0;
+let value_saldo_kel = 0;
+let value_jum_trans = 0;
+
+let saldo_now = document.getElementById("saldo1");
+let saldo_min = document.getElementById("saldo2");
+let saldo_kel = document.getElementById("saldo3");
+let jum_trans = document.getElementById("saldo4");
+let id_nominal = document.getElementById("nominal");
 
 // let data_logo = [
 //   "image/sendok.png",
@@ -200,59 +210,151 @@ let wrna_nom;
 // ];
 
 add1.addEventListener("click", () => {
+  let nom_bulat = Number(nominal_uang.value);
   if (opsi1.value == "Gaji Bulanan") {
-    div_isi.innerHTML += `<div class="riwayat-list">
+    if (but1ak.classList.contains("but1aktive")) {
+      div_isi.innerHTML += `<div class="riwayat-list">
        <div class="child-riw">
           <img src="${data_logo[2]}" id="koper-riw" />
           <h1>${opsi1.value}</h1>
        </div>
       <h4>${dte.value}</h4>
-      <h2 id="minorplus">Rp${nominal_uang.value}</h2>
+      <h2>+Rp${nom_bulat.toLocaleString("id-ID")}</h2>
       <img src="image/ellipse.png" class="img2" />
       </div>`;
-    wrna_nom = document.getElementById("minorplus");
-    if (!but1ak.classList.contains("but1aktive")) {
-      wrna_nom.style.color = "red";
+      value_saldo_now += nom_bulat;
+      value_jum_trans += 1;
+      value_saldo_min += nom_bulat;
+    } else {
+      div_isi.innerHTML += `<div class="riwayat-list">
+       <div class="child-riw">
+          <img src="${data_logo[2]}" id="koper-riw" />
+          <h1>${opsi1.value}</h1>
+       </div>
+      <h4>${dte.value}</h4>
+      <h2 id="minorplus">-Rp${nominal_uang.value}</h2>
+      <img src="image/ellipse.png" class="img2" />
+      </div>`;
+      value_saldo_now -= nom_bulat;
+      value_jum_trans += 1;
+      value_saldo_kel += nom_bulat;
     }
   } else if (opsi1.value == "Makan Siang") {
-    div_isi.innerHTML += `<div class="riwayat-list">
+    if (but1ak.classList.contains("but1aktive")) {
+      div_isi.innerHTML += `<div class="riwayat-list">
        <div class="child-riw">
           <img src="${data_logo[0]}" id="koper-riw" />
           <h1>${opsi1.value}</h1>
        </div>
       <h4>${dte.value}</h4>
-      <h2 id="minorplus">Rp${nominal_uang.value}</h2>
+      <h2>+Rp${nominal_uang.value}</h2>
       <img src="image/ellipse.png" class="img2" />
       </div>`;
+      value_saldo_now += nom_bulat;
+      value_jum_trans += 1;
+      value_saldo_min += nom_bulat;
+    } else {
+      div_isi.innerHTML += `<div class="riwayat-list">
+       <div class="child-riw">
+          <img src="${data_logo[0]}" id="koper-riw" />
+          <h1>${opsi1.value}</h1>
+       </div>
+      <h4>${dte.value}</h4>
+      <h2 id="minorplus">-Rp${nominal_uang.value}</h2>
+      <img src="image/ellipse.png" class="img2" />
+      </div>`;
+      value_saldo_now -= nom_bulat;
+      value_jum_trans += 1;
+      value_saldo_kel += nom_bulat;
+    }
   } else if (opsi1.value == "Bensin") {
-    div_isi.innerHTML += `<div class="riwayat-list">
+    if (but1ak.classList.contains("but1aktive")) {
+      div_isi.innerHTML += `<div class="riwayat-list">
        <div class="child-riw">
           <img src="${data_logo[3]}" id="koper-riw" />
           <h1>${opsi1.value}</h1>
        </div>
       <h4>${dte.value}</h4>
-      <h2 id="minorplus">Rp${nominal_uang.value}</h2>
+      <h2>+Rp${nominal_uang.value}</h2>
       <img src="image/ellipse.png" class="img2" />
       </div>`;
+      value_saldo_now += nom_bulat;
+      value_jum_trans += 1;
+      value_saldo_min += nom_bulat;
+    } else {
+      div_isi.innerHTML += `<div class="riwayat-list">
+       <div class="child-riw">
+          <img src="${data_logo[3]}" id="koper-riw" />
+          <h1>${opsi1.value}</h1>
+       </div>
+      <h4>${dte.value}</h4>
+      <h2 id="minorplus">-Rp${nominal_uang.value}</h2>
+      <img src="image/ellipse.png" class="img2" />
+      </div>`;
+      value_saldo_now -= nom_bulat;
+      value_jum_trans += 1;
+      value_saldo_kel += nom_bulat;
+    }
   } else if (opsi1.value == "Top Up Game") {
-    div_isi.innerHTML += `<div class="riwayat-list">
+    if (but1ak.classList.contains("but1aktive")) {
+      div_isi.innerHTML += `<div class="riwayat-list">
        <div class="child-riw">
           <img src="${data_logo[4]}" id="koper-riw" />
           <h1>${opsi1.value}</h1>
        </div>
       <h4>${dte.value}</h4>
-      <h2 id="minorplus">Rp${nominal_uang.value}</h2>
+      <h2>+Rp${nominal_uang.value}</h2>
       <img src="image/ellipse.png" class="img2" />
       </div>`;
+      value_saldo_now += nom_bulat;
+      value_jum_trans += 1;
+      value_saldo_min += nom_bulat;
+    } else {
+      div_isi.innerHTML += `<div class="riwayat-list">
+       <div class="child-riw">
+          <img src="${data_logo[4]}" id="koper-riw" />
+          <h1>${opsi1.value}</h1>
+       </div>
+      <h4>${dte.value}</h4>
+      <h2 id="minorplus">-Rp${nominal_uang.value}</h2>
+      <img src="image/ellipse.png" class="img2" />
+      </div>`;
+      value_saldo_now -= nom_bulat;
+      value_jum_trans += 1;
+      value_saldo_kel += nom_bulat;
+    }
   } else if (opsi1.value == "Belanja Bulanan") {
-    div_isi.innerHTML += `<div class="riwayat-list">
+    if (but1ak.classList.contains("but1aktive")) {
+      div_isi.innerHTML += `<div class="riwayat-list">
        <div class="child-riw">
           <img src="${data_logo[1]}" id="koper-riw" />
           <h1>${opsi1.value}</h1>
        </div>
       <h4>${dte.value}</h4>
-      <h2 id="minorplus">Rp${nominal_uang.value}</h2>
+      <h2>+Rp${nominal_uang.value}</h2>
       <img src="image/ellipse.png" class="img2" />
       </div>`;
+      value_saldo_now += nom_bulat;
+      value_jum_trans += 1;
+      value_saldo_min += nom_bulat;
+    } else {
+      div_isi.innerHTML += `<div class="riwayat-list">
+       <div class="child-riw">
+          <img src="${data_logo[1]}" id="koper-riw" />
+          <h1>${opsi1.value}</h1>
+       </div>
+      <h4>${dte.value}</h4>
+      <h2 id="minorplus">-Rp${nominal_uang.value}</h2>
+      <img src="image/ellipse.png" class="img2" />
+      </div>`;
+      value_saldo_now -= nom_bulat;
+      value_jum_trans += 1;
+      value_saldo_kel += nom_bulat;
+    }
   }
+
+  saldo_now.textContent = value_saldo_now.toLocaleString("id-ID");
+  saldo_min.textContent = value_saldo_min.toLocaleString("id-ID");
+  saldo_kel.textContent = value_saldo_kel.toLocaleString("id-ID");
+  jum_trans.textContent = value_jum_trans.toLocaleString("id-ID");
 });
