@@ -181,3 +181,78 @@ but2ak.addEventListener("click", () => {
   but2ak.classList.add("but2aktive");
   but1ak.classList.remove("but1aktive");
 });
+
+let nominal_uang = document.getElementById("nominal");
+let opsi1 = document.getElementById("opsi1");
+let butmsk = document.getElementById("button1");
+let butklr = document.getElementById("button2");
+let add1 = document.getElementById("button3");
+let dte = document.getElementById("date");
+let div_isi = document.querySelector(".riwayat-transaksi1");
+let wrna_nom;
+
+// let data_logo = [
+//   "image/sendok.png",
+//   "image/bag.png",
+//   "image/koper.png",
+//   "image/fuel.png",
+//   "image/games.png",
+// ];
+
+add1.addEventListener("click", () => {
+  if (opsi1.value == "Gaji Bulanan") {
+    div_isi.innerHTML += `<div class="riwayat-list">
+       <div class="child-riw">
+          <img src="${data_logo[2]}" id="koper-riw" />
+          <h1>${opsi1.value}</h1>
+       </div>
+      <h4>${dte.value}</h4>
+      <h2 id="minorplus">Rp${nominal_uang.value}</h2>
+      <img src="image/ellipse.png" class="img2" />
+      </div>`;
+    wrna_nom = document.getElementById("minorplus");
+    if (!but1ak.classList.contains("but1aktive")) {
+      wrna_nom.style.color = "red";
+    }
+  } else if (opsi1.value == "Makan Siang") {
+    div_isi.innerHTML += `<div class="riwayat-list">
+       <div class="child-riw">
+          <img src="${data_logo[0]}" id="koper-riw" />
+          <h1>${opsi1.value}</h1>
+       </div>
+      <h4>${dte.value}</h4>
+      <h2 id="minorplus">Rp${nominal_uang.value}</h2>
+      <img src="image/ellipse.png" class="img2" />
+      </div>`;
+  } else if (opsi1.value == "Bensin") {
+    div_isi.innerHTML += `<div class="riwayat-list">
+       <div class="child-riw">
+          <img src="${data_logo[3]}" id="koper-riw" />
+          <h1>${opsi1.value}</h1>
+       </div>
+      <h4>${dte.value}</h4>
+      <h2 id="minorplus">Rp${nominal_uang.value}</h2>
+      <img src="image/ellipse.png" class="img2" />
+      </div>`;
+  } else if (opsi1.value == "Top Up Game") {
+    div_isi.innerHTML += `<div class="riwayat-list">
+       <div class="child-riw">
+          <img src="${data_logo[4]}" id="koper-riw" />
+          <h1>${opsi1.value}</h1>
+       </div>
+      <h4>${dte.value}</h4>
+      <h2 id="minorplus">Rp${nominal_uang.value}</h2>
+      <img src="image/ellipse.png" class="img2" />
+      </div>`;
+  } else if (opsi1.value == "Belanja Bulanan") {
+    div_isi.innerHTML += `<div class="riwayat-list">
+       <div class="child-riw">
+          <img src="${data_logo[1]}" id="koper-riw" />
+          <h1>${opsi1.value}</h1>
+       </div>
+      <h4>${dte.value}</h4>
+      <h2 id="minorplus">Rp${nominal_uang.value}</h2>
+      <img src="image/ellipse.png" class="img2" />
+      </div>`;
+  }
+});
